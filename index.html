@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBird Sighting Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  </div>
+  <select id="sectionType" class="section-selector">
+    <option value="alphabetical">Alphabetical</option>
+    <option value="count">Count Ranges</option>
+    <option value="date">Date Seen</option>
+    <option value="rarity">Rarity</option>
+  </select>
+  <div  id="sectionData"></div>
+</div>
+
+        <h1><span class="big-emoji">🦅</span> Recent Bird Sightings</h1>
+
+        <p class="subtitle">Data provided by the eBird API</p>
+        
+        <div class="controls">
+            <input type="text" id="regionInput" value="US-NY" placeholder="Enter Region Code (e.g., US-NY, CA)">
+            <button id="fetchBtn">Find Birds</button>
+        </div>
+
+        <div id="loading" class="hidden">Searching the skies...</div>
+        <div id="error" class="hidden"></div>
+        
+        <ul id="birdList"></ul>
+    
+    <div id="controls" class="controls-top-left"></div>
+    
+
+    <script src="app.js"></script>
+
+</body>
+</html>
